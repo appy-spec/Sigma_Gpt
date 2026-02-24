@@ -86,6 +86,7 @@ Sigma_Gpt/
 │   │   ├── Sidebar.jsx
 │   │   └── Sidebar.css
 │   └── package.json
+|
 └── README.md
 ```
 
