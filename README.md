@@ -130,7 +130,7 @@ PORT=8080
 ### Step 4: Start Backend Server
 
 ```bash
-npm run start
+node server.js
 ```
 
 Server will run on:
