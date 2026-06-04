@@ -1,5 +1,6 @@
 import "./ChatWindow.css";
 import Chat from "./Chat.jsx";
+import Navbar from "./Navbar.jsx";
 import { MyContext } from "./MyContext.jsx";
 import { useContext, useState, useEffect } from "react";
 import { ScaleLoader } from "react-spinners";
@@ -33,7 +34,7 @@ function ChatWindow() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch("https://sigma-gpt-9ujx.onrender.com/api/chat", options);
       const res = await response.json();
       setReply(res.reply);
     } catch (err) {
@@ -63,17 +64,8 @@ function ChatWindow() {
 
   return (
     <div className="chatWindow">
-      <div className="navbar">
-        <span>
-          SigmaGpt <i className="fa-solid fa-chevron-down"></i>
-        </span>
-        <div className="userIconDiv">
-          <span className="userIcon">
-            <i className="fa-solid fa-user"></i>
-          </span>
-        </div>
-      </div>
 
+      <Navbar></Navbar>
       <Chat></Chat>
       <ScaleLoader color="#ffffff" loading={loading} />
 
