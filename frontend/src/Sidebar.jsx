@@ -1,4 +1,5 @@
 import "./Sidebar.css";
+import logo from "./assets/blacklogo.png";
 import { MyContext } from "./MyContext.jsx";
 import { useContext, useEffect, useState } from "react";
 import { v1 as uuidv1 } from "uuid";
@@ -98,7 +99,7 @@ function Sidebar() {
       <section className={`sidebar ${showSidebar ? "active" : ""}`}>
         <button onClick={createNewChat}>
           <img
-            src="src/assets/blacklogo.png"
+            src={logo}
             alt="gpt logo"
             className="logo"
           />
