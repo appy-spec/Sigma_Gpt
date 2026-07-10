@@ -1,6 +1,6 @@
 # Sigma_Gpt
 
-Sigma_Gpt is a Full-Stack AI Chat Application built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)** and powered by the **OpenAI API**.
+Sigma_Gpt is a Full-Stack AI Chat Application built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)** and powered by the **Gemini/OpenAI API**.
 
 This project allows users to interact with an AI assistant in real-time, store chat history in MongoDB, and retrieve previous conversations seamlessly.
 
